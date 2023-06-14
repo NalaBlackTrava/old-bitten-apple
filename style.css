@@ -1,0 +1,101 @@
+body {
+    background-image: url('grain.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.macintosh-program {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.window {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 19px;
+    text-align: center;
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    max-height: 400px; /* Define a altura máxima para exibir a barra de rolagem */
+}
+
+.title-bar {
+    background-color: #ffffff;
+    height: 20px;
+    padding: 4px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.line-left{
+    height: 2px;
+    background-color: black;
+    margin: 2px 4px;
+}
+
+.title {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.close-button {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.close-button::before {
+    content: "X";
+}
+
+.maximize-button {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maximize-button::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+}
+
+
+
+
